@@ -1,0 +1,52 @@
+{
+  "name": "vue-light-bootstrap-dashboard",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Vue light bootstrap dashboard",
+  "author": "cristijora <joracristi@gmail.com>",
+  "scripts": {
+    "serve": "vue-cli-service serve --open",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "dev": "vue-cli-service serve --open",
+    "e2e": "node test/e2e/runner.js",
+    "lint-fix": "vue-cli-service lint --fix",
+    "start": "vue-cli-service serve --open"
+  },
+  "dependencies": {
+    "@types/date-fns": "^2.6.0",
+    "bootstrap": "^4.3.1",
+    "chartist": "^0.11.0",
+    "core-js": "^3.6.5",
+    "date-fns": "^2.14.0",
+    "google-maps": "^3.2.1",
+    "mdbvue": "6.7.1",
+    "register-service-worker": "^1.5.2",
+    "v-tooltip": "^2.0.0-rc.33",
+    "vue": "^2.6.11",
+    "vue-beautiful-chat": "^2.3.1",
+    "vue-carousel": "^0.18.0",
+    "vue-image-upload-resize": "^2.3.0",
+    "vue-material": "^1.0.0-beta-14",
+    "vue-router": "^3.0.2",
+    "vue-scrollto": "^2.18.1",
+    "vue-wysiwyg": "^1.7.2",
+    "vue2-google-maps": "^0.8.4",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.4.0",
+    "@vue/cli-plugin-eslint": "^3.4.0",
+    "@vue/cli-plugin-pwa": "^3.4.0",
+    "@vue/cli-service": "^3.4.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "vue-cli-plugin-mdb": "~2.1.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 11"
+  ]
+}

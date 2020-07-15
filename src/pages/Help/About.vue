@@ -1,0 +1,84 @@
+<template>
+  <div class="content">
+    <div class="container-fluid">
+      <md-card>
+        <md-card-content style="padding: 36px">
+      <div style="mso-element: para-border-div; border: none black 1.0pt; mso-border-alt: none black 0in; padding: 0in 0in 0in 0in;">
+<h1 style="text-align: center; line-height: 150%; mso-border-between: 0in none black; mso-padding-between: 0in; padding-bottom: 0in; mso-padding-bottom-alt: 0in; border-bottom: 0in none black; mso-border-bottom-alt: 0in none black;" align="center"><span lang="EN">Community Rules</span></h1>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; mso-border-between: 0in none black; mso-padding-between: 0in; padding-top: 0in; mso-padding-top-alt: 0in; padding-bottom: 0in; mso-padding-bottom-alt: 0in; border-bottom: 0in none black; mso-border-bottom-alt: 0in none black;"><span lang="EN" style="font-size: 12.0pt; line-height: 150%;">At Nuclu, we want to build a friendly, positive, and safe community where users from all corners of the globe can establish trust with one another, expand business connections, and cultivate a network of trusted, business-oriented relationships.</span></p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; mso-border-between: 0in none black; mso-padding-between: 0in; padding-top: 0in; mso-padding-top-alt: 0in; padding-bottom: 0in; mso-padding-bottom-alt: 0in; border-bottom: 0in none black; mso-border-bottom-alt: 0in none black;"><span lang="EN" style="font-size: 12.0pt; line-height: 150%;">In this connection, we have formulated these Community Rules to serve as guidelines for all buyers and sellers to create and maintain an open, transparent, responsible, and sharing business environment that protects and preserves the legitimate rights and interests of all users of Nuclu at </span><span lang="EN"><a title="https://dev-b2b.madeinmars.com" href="https://dev-b2b.madeinmars.com/"><span style="font-size: 12.0pt; line-height: 150%; color: #1155cc;">https://dev-b2b.madeinmars.com</span></a></span><span lang="EN" style="font-size: 12.0pt; line-height: 150%;">. Hence, we advise that you go through these do&rsquo;s and don'ts when you use our mobile marketplace. Using Nuclu means that you also agree to be bound by our Terms and Conditions found </span><span lang="EN"><a title="http://www.something.com" href="http://www.something.com/"><span style="font-size: 12.0pt; line-height: 150%; color: #1155cc; background: yellow; mso-highlight: yellow;">here</span></a></span><span lang="EN" style="font-size: 12.0pt; line-height: 150%;">.</span></p>
+<h2 style="text-align: center; line-height: 150%; mso-border-between: 0in none black; mso-padding-between: 0in; padding-top: 0in; mso-padding-top-alt: 0in;" align="center"><a name="_izpnk7dxhkbs"></a><strong style="mso-bidi-font-weight: normal;"><span lang="EN" style="color: #3d85c6;">The Do&rsquo;s</span></strong></h2>
+</div>
+<div style="mso-element: para-border-div; border: none black 1.0pt; mso-border-alt: none black 0in; padding: 0in 0in 0in 0in; margin-left: .25in; margin-right: 0in;">
+<h3 style="margin-left: .25in; text-align: justify; text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo2; mso-border-between: 0in none black; mso-padding-between: 0in;"><a name="_harw6sbk567t"></a><!-- [if !supportLists]--><span lang="EN"><span style="mso-list: Ignore;">1)<span style="font: 7.0pt 'Times New Roman';">&nbsp;&nbsp; </span></span></span><!--[endif]--><span lang="EN">Be courteous and professional at all times.</span></h3>
+</div>
+<div style="mso-element: para-border-div; border: none black 1.0pt; mso-border-alt: none black 0in; padding: 0in 0in 0in 0in;">
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; mso-border-between: 0in none black; mso-padding-between: 0in;"><span lang="EN" style="font-size: 12.0pt; line-height: 150%;">Our goal is to foster a safe environment whereby users can enjoy building their connections and easily conduct trustworthy business-to-business transactions. Therefore, always keep your content clean, kind, relevant, and suitable for and respectful of everyone. Sharing information that shocks or intimidates others, as well as graphic, obscene, or pornographic content, shall not be tolerated.</span></p>
+</div>
+<div style="mso-element: para-border-div; border: none black 1.0pt; mso-border-alt: none black 0in; padding: 0in 0in 0in 0in; margin-left: .25in; margin-right: 0in;">
+<h3 style="margin-left: .25in; text-align: justify; text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo2; mso-border-between: 0in none black; mso-padding-between: 0in;"><a name="_qffht1gy7hyp"></a><!-- [if !supportLists]--><span lang="EN"><span style="mso-list: Ignore;">2)<span style="font: 7.0pt 'Times New Roman';">&nbsp;&nbsp; </span></span></span><!--[endif]--><span lang="EN">Share your knowledge or expertise.</span></h3>
+</div>
+<div style="mso-element: para-border-div; border: none black 1.0pt; mso-border-alt: none black 0in; padding: 0in 0in 0in 0in;">
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; mso-border-between: 0in none black; mso-padding-between: 0in;"><span lang="EN" style="font-size: 12.0pt; line-height: 150%;">Sharing is caring, so do not hold back in sharing what you know. Someone will likely find the information that you post useful or interesting.</span></p>
+</div>
+<div style="mso-element: para-border-div; border: none black 1.0pt; mso-border-alt: none black 0in; padding: 0in 0in 0in 0in; margin-left: .25in; margin-right: 0in;">
+<h3 style="margin-left: .25in; text-align: justify; text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo2; mso-border-between: 0in none black; mso-padding-between: 0in;"><a name="_fvbz3j2dfg7u"></a><!-- [if !supportLists]--><span lang="EN"><span style="mso-list: Ignore;">3)<span style="font: 7.0pt 'Times New Roman';">&nbsp;&nbsp; </span></span></span><!--[endif]--><span lang="EN">Report abuse as soon as it occurs.</span></h3>
+</div>
+<div style="mso-element: para-border-div; border: none black 1.0pt; mso-border-alt: none black 0in; padding: 0in 0in 0in 0in;">
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; mso-border-between: 0in none black; mso-padding-between: 0in;"><span lang="EN" style="font-size: 12.0pt; line-height: 150%;">A strong online community is one that is capable of governing itself. So, if you see a breach of any of these community guidelines or any form of abuse on our platform, do not hesitate to report the matter to us right away. In the same manner, if you see something which you believe violates our policies, please report it also to us so we can take the appropriate actions necessary.</span></p>
+</div>
+<div style="mso-element: para-border-div; border: none black 1.0pt; mso-border-alt: none black 0in; padding: 0in 0in 0in 0in; margin-left: .25in; margin-right: 0in;">
+<h3 style="margin-left: .25in; text-align: justify; text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo2; mso-border-between: 0in none black; mso-padding-between: 0in;"><a name="_5w24xpdvau0e"></a><!-- [if !supportLists]--><span lang="EN"><span style="mso-list: Ignore;">4)<span style="font: 7.0pt 'Times New Roman';">&nbsp;&nbsp; </span></span></span><!--[endif]--><span lang="EN">Be proactive.</span></h3>
+</div>
+<div style="mso-element: para-border-div; border: none black 1.0pt; mso-border-alt: none black 0in; padding: 0in 0in 0in 0in;">
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; mso-border-between: 0in none black; mso-padding-between: 0in;"><span lang="EN" style="font-size: 12.0pt; line-height: 150%;">Take accountability for all the posts and materials that you post in the community, as well as the quality of conversations that you participate in.</span></p>
+</div>
+<div style="mso-element: para-border-div; border: none black 1.0pt; mso-border-alt: none black 0in; padding: 0in 0in 0in 0in; margin-left: .25in; margin-right: 0in;">
+<h3 style="margin-left: .25in; text-align: justify; text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo2; mso-border-between: 0in none black; mso-padding-between: 0in;"><a name="_a8huyinkuqar"></a><!-- [if !supportLists]--><span lang="EN"><span style="mso-list: Ignore;">5)<span style="font: 7.0pt 'Times New Roman';">&nbsp;&nbsp; </span></span></span><!--[endif]--><span lang="EN">Comply with all applicable laws, rules, and regulations.</span></h3>
+</div>
+<div style="mso-element: para-border-div; border: none black 1.0pt; mso-border-alt: none black 0in; padding: 0in 0in 0in 0in;">
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; mso-border-between: 0in none black; mso-padding-between: 0in; padding-bottom: 0in; mso-padding-bottom-alt: 0in; border-bottom: 0in none black; mso-border-bottom-alt: 0in none black;"><span lang="EN" style="font-size: 12.0pt; line-height: 150%;">All users of our Services are expected to respect other users&rsquo; rights and be compliant with all applicable rules and regulations. This includes privacy laws, copyright and intellectual property laws, export control laws, anti-spam laws, and regulatory requirements, among others. Hence, make sure you have a legal right before you can share or use someone else&rsquo;s copyrighted works, trade secrets, or trademarks.</span></p>
+<h2 style="text-align: center; line-height: 150%; mso-border-between: 0in none black; mso-padding-between: 0in; padding-top: 0in; mso-padding-top-alt: 0in;" align="center"><a name="_cjwcry2cu5p4"></a><strong style="mso-bidi-font-weight: normal;"><span lang="EN" style="color: #3d85c6;">The Don'ts</span></strong></h2>
+</div>
+<div style="mso-element: para-border-div; border: none black 1.0pt; mso-border-alt: none black 0in; padding: 0in 0in 0in 0in; margin-left: .25in; margin-right: 0in;">
+<h3 style="margin-left: .25in; text-align: justify; text-indent: -.25in; line-height: 150%; mso-list: l1 level1 lfo1; mso-border-between: 0in none black; mso-padding-between: 0in;"><a name="_3xlw8emom2ag"></a><!-- [if !supportLists]--><span lang="EN"><span style="mso-list: Ignore;">1)<span style="font: 7.0pt 'Times New Roman';">&nbsp;&nbsp; </span></span></span><!--[endif]--><span lang="EN">Do not falsely represent yourself.</span></h3>
+</div>
+<div style="mso-element: para-border-div; border: none black 1.0pt; mso-border-alt: none black 0in; padding: 0in 0in 0in 0in;">
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; mso-border-between: 0in none black; mso-padding-between: 0in;"><span lang="EN" style="font-size: 12.0pt; line-height: 150%;">Any fraudulent, misleading, or deceptive impersonation on or through Nuclu is a serious offense. Our objective is to build an import and export marketplace that is built on top of users&rsquo; business-oriented relationships. Hence, credibility must be exercised at all times. Take note, however, of sharing personal information about you or about someone else that you aren&rsquo;t comfortable sharing with strangers.</span></p>
+</div>
+<div style="mso-element: para-border-div; border: none black 1.0pt; mso-border-alt: none black 0in; padding: 0in 0in 0in 0in; margin-left: .25in; margin-right: 0in;">
+<h3 style="margin-left: .25in; text-align: justify; text-indent: -.25in; line-height: 150%; mso-list: l1 level1 lfo1; mso-border-between: 0in none black; mso-padding-between: 0in;"><a name="_n57yjtsq6n"></a><!-- [if !supportLists]--><span lang="EN"><span style="mso-list: Ignore;">2)<span style="font: 7.0pt 'Times New Roman';">&nbsp;&nbsp; </span></span></span><!--[endif]--><span lang="EN">Do not upload or post defamatory, indecent, disgraceful, inappropriate, offensive, discriminatory, profane, unlawful, misleading, or threatening posts and comments.</span></h3>
+</div>
+<div style="mso-element: para-border-div; border: none black 1.0pt; mso-border-alt: none black 0in; padding: 0in 0in 0in 0in;">
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; mso-border-between: 0in none black; mso-padding-between: 0in;"><span lang="EN" style="font-size: 12.0pt; line-height: 150%;">Other people in the community may have had different perspectives or life experiences from yours. Hence, be welcoming of different viewpoints. Insulting, threatening, or harassing other users is strictly prohibited.</span></p>
+</div>
+<div style="mso-element: para-border-div; border: none black 1.0pt; mso-border-alt: none black 0in; padding: 0in 0in 0in 0in; margin-left: .25in; margin-right: 0in;">
+<h3 style="margin-left: .25in; text-align: justify; text-indent: -.25in; line-height: 150%; mso-list: l1 level1 lfo1; mso-border-between: 0in none black; mso-padding-between: 0in;"><a name="_m34trcnh4c3k"></a><!-- [if !supportLists]--><span lang="EN"><span style="mso-list: Ignore;">3)<span style="font: 7.0pt 'Times New Roman';">&nbsp;&nbsp; </span></span></span><!--[endif]--><span lang="EN">Do not use the platform for promoting any illegal conduct or activity.</span></h3>
+</div>
+<div style="mso-element: para-border-div; border: none black 1.0pt; mso-border-alt: none black 0in; padding: 0in 0in 0in 0in;">
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; mso-border-between: 0in none black; mso-padding-between: 0in;"><span lang="EN" style="font-size: 12.0pt; line-height: 150%;">Nuclu reserves the right to enforce punitive measures upon any user who utilizes the platform to obtain benefits arising from any illegal activity. Using the platform to commit fraud, trick others, intentionally distribute or transmit viruses or other software that can disrupt or destroy others&rsquo; data or computer services, or interfere with the operation of our platform and delivery of services, is considered a violative of these rules and policies.</span></p>
+</div>
+<div style="mso-element: para-border-div; border: none black 1.0pt; mso-border-alt: none black 0in; padding: 0in 0in 0in 0in; margin-left: .25in; margin-right: 0in;">
+<h3 style="margin-left: .25in; text-align: justify; text-indent: -.25in; line-height: 150%; mso-list: l1 level1 lfo1; mso-border-between: 0in none black; mso-padding-between: 0in;"><a name="_41tq2bgtp2u0"></a><!-- [if !supportLists]--><span lang="EN"><span style="mso-list: Ignore;">4)<span style="font: 7.0pt 'Times New Roman';">&nbsp;&nbsp; </span></span></span><!--[endif]--><span lang="EN">No spamming or flooding.</span></h3>
+</div>
+<div style="mso-element: para-border-div; border: none black 1.0pt; mso-border-alt: none black 0in; padding: 0in 0in 0in 0in;">
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; mso-border-between: 0in none black; mso-padding-between: 0in;"><span lang="EN" style="font-size: 12.0pt; line-height: 150%;">Do not repost the same or very similar messages more than once. No one likes seeing the same content posted to many discussions.</span></p>
+</div>
+<div style="mso-element: para-border-div; border: none black 1.0pt; mso-border-alt: none black 0in; padding: 0in 0in 0in 0in; margin-left: .25in; margin-right: 0in;">
+<h3 style="margin-left: .25in; text-align: justify; text-indent: -.25in; line-height: 150%; mso-list: l0 level1 lfo2; mso-border-between: 0in none black; mso-padding-between: 0in;"><a name="_35ltuxdls722"></a><!-- [if !supportLists]--><span lang="EN"><span style="mso-list: Ignore;">6)<span style="font: 7.0pt 'Times New Roman';">&nbsp;&nbsp; </span></span></span><!--[endif]--><span lang="EN">Do not attack people.</span></h3>
+</div>
+<div style="mso-element: para-border-div; border: none black 1.0pt; mso-border-alt: none black 0in; padding: 0in 0in 0in 0in;">
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; mso-border-between: 0in none black; mso-padding-between: 0in; padding-bottom: 0in; mso-padding-bottom-alt: 0in; border-bottom: 0in none black; mso-border-bottom-alt: 0in none black;"><span lang="EN" style="font-size: 12.0pt; line-height: 150%;">Making personal attacks on anyone shall not be tolerated. Report the matter to the website administrator immediately if any such instance occurs.</span></p>
+<p class="MsoNormal" style="text-align: justify; line-height: 150%; mso-border-between: 0in none black; mso-padding-between: 0in; padding-top: 0in; mso-padding-top-alt: 0in; padding-bottom: 0in; mso-padding-bottom-alt: 0in; border-bottom: 0in none black; mso-border-bottom-alt: 0in none black;"><span lang="EN" style="font-size: 12.0pt; line-height: 150%;">User conduct that tends to or that actually restricts any other user from using or enjoying the platform shall not be permitted.<span style="mso-spacerun: yes;">&nbsp; </span>Nuclu reserves the right to refuse access to the mobile marketplace under its control or revoke community membership in such instance.</span></p>
+</div>
+      </md-card-content>
+    </md-card>
+    </div>
+  </div>
+</template>
+<script>
+
+</script>
+<style>
+
+</style>
