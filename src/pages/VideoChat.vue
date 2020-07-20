@@ -93,48 +93,56 @@ export default {
     right: 10px;
     bottom: 10px;
 }
-.chatWindowContainer {
+.videoCall .chatWindowContainer {
     padding: 30px;
 }
-.chatWindowContainer .sc-message--text {
+.videoCall .chatWindowContainer .sc-message--text {
     padding: 10px 20px !important;
 }
-.chatWindowContainer .sc-chat-window {
+.videoCall .chatWindowContainer .sc-chat-window {
     position: static !important;
     height: calc(100vh - 280px) !important;
     width: 100% !important;
     padding: 0px 20px;
     border: none !important;
 }
-.chatWindowContainer .sc-message-list {
+.videoCall .chatWindowContainer .sc-message-list {
     height: 100% !important;
     padding: 40px 5px !important;
 }
-.chatWindowContainer .sc-message--text-content {
+.videoCall .chatWindowContainer .sc-message--text-content {
     word-break: break-all;
 }
-.chatWindowContainer .chatWindow .sc-chat-window .sc-user-input--text {
+.videoCall .chatWindowContainer .chatWindow .sc-chat-window .sc-user-input--text {
     max-width: calc(100% - 100px) !important;
     width: calc(100% - 100px) !important;
     word-break: break-all;
 }
-.chatWindowContainer .sc-message-list::-webkit-scrollbar {
+.videoCall .chatWindowContainer .sc-message-list::-webkit-scrollbar {
     width: 6px;
     background-color: rgba(0,0,0,0.1);
+    visibility: hidden;
 }
-.chatWindowContainer .sc-message-list::-webkit-scrollbar-thumb {
+.videoCall .chatWindowContainer .sc-message-list::-webkit-scrollbar-thumb {
     background-color: rgba(0,0,0,0.4);
     border-radius: 6px;
+    visibility: hidden;
 }
-.chatWindowContainer .sc-message-list::-webkit-scrollbar-track {
+.videoCall .chatWindowContainer .sc-message-list::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
     background-color: rgba(0,0,0,0.1);
     border-radius: 6px;
+    visibility: hidden;
 }
-.chatWindowContainer .sc-chat-window .sc-message{
+.videoCall .chatWindowContainer .sc-message-list:hover::-webkit-scrollbar,
+.videoCall .chatWindowContainer .sc-message-list:hover::-webkit-scrollbar-thumb,
+.videoCall .chatWindowContainer .sc-message-list:hover::-webkit-scrollbar-track {
+    visibility: visible;
+}
+.videoCall .chatWindowContainer .sc-chat-window .sc-message{
     width: 100% !important;
 }
-.chatWindowContainer .sc-header {
+.videoCall .chatWindowContainer .sc-header {
     display: none !important;
 }
 .videoCall .container{

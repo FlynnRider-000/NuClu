@@ -47,10 +47,9 @@
     width: 40px;
     min-width: 40px;
     min-height: 40px;
-    padding: 10px;
+    margin-right:10px;
 }
 .feedItemComment .userName {
-    padding: 5px;
     overflow: hidden;
 }
 .feedItemComment .comment {

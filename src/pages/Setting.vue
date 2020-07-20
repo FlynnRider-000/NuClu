@@ -43,20 +43,9 @@
 </template>
 
 <script>
-import { mdbCard, mdbCardImage, mdbCardBody, mdbCardTitle, mdbCardText, mdbBtn, mdbInput, mdbIcon } from 'mdbvue';
 
 export default {
   name: 'SettingsPage',
-  components: {
-    mdbCard,
-    mdbCardImage,
-    mdbCardBody,
-    mdbCardTitle,
-    mdbCardText,
-    mdbBtn,
-    mdbInput,
-    mdbIcon
-  },
   data() {
     return {
       language: "english",

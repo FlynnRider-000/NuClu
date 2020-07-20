@@ -12,51 +12,30 @@
             <div class="btn btn-info btn-fill btn-xs" @click="onComments()">Comments</div>
         </div>
         <div>
-            <mdb-modal size="md" :show="modal" @close="modal = false">
-                <mdb-modal-header>
-                    <mdb-modal-title>Leave Comments</mdb-modal-title>
-                </mdb-modal-header>
-                <mdb-modal-body>
-                    <mdb-input
-                        wrapperClass="pink-textarea"
-                        type="textarea"
-                        label="Your comments here...."
-                    />
-                </mdb-modal-body>
-                <mdb-modal-footer>
-                    <md-button @click="modal = false" class="btn-info btn-fill btn-xs">
-                        Cancel
-                    </md-button>
-                    <md-button class="btn-primary btn-fill btn-xs">
-                        Leave
-                    </md-button>
-                </mdb-modal-footer>
-            </mdb-modal>
+            <md-dialog-prompt
+                :md-active.sync="commentModal"
+                v-model="commentValue"
+                md-title="Leave Comments"
+                md-input-placeholder="Your comments here..."
+                md-confirm-text="Leave" 
+                class="md-custom-theme-light"
+            />
         </div>
     </div>       
 </template>
 <script>
 
-import { mdbBtn, mdbModal, mdbModalHeader, mdbModalTitle, mdbModalBody, mdbModalFooter, mdbInput } from 'mdbvue';
 
 export default {
-    components: {
-        mdbModal,
-        mdbModalHeader,
-        mdbModalTitle,
-        mdbModalBody,
-        mdbModalFooter,
-        mdbBtn,
-        mdbInput,
-    },
     data() {
         return {
-            modal: false,
+            commentModal: false,
+            commentValue: "",
         }
     },
     methods: {
         onComments: function(){
-        this.modal = true;
+        this.commentModal = true;
         }
     }
 }

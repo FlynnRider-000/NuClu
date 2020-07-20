@@ -42,7 +42,7 @@ export default {
     return {
       type: ['', 'info', 'success', 'warning', 'danger'],
       notifications: {
-        topCenter: falsea
+        topCenter: false
       }
     }
   },

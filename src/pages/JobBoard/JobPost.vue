@@ -6,16 +6,28 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-7">
-          <mdb-input type="text" label="Job Title" outline />
+          <md-field>
+            <label>Job Title</label>
+            <md-input></md-input>
+          </md-field>
         </div>
         <div class="col-sm-5">
-          <mdb-input type="text" label="Salary" outline />
+          <md-field>
+            <label>Salary</label>
+            <md-input></md-input>
+          </md-field>
         </div>
         <div class="col-sm-12">
-          <mdb-input type="textarea" label="Job Details" outline :rows="10" />
+          <md-field class="jobDetails">
+            <label>Job Details</label>
+            <md-textarea></md-textarea>
+          </md-field>
         </div>
         <div class="col-sm-12">
-          <mdb-input type="textarea" label="Contacts" outline :rows="4" />
+          <md-field>
+            <label>Contacts</label>
+            <md-textarea></md-textarea>
+          </md-field>
         </div>
       </div>
       <div class="jobPostAction">
@@ -31,13 +43,11 @@
   </div>
 </template>
 <script>
-import {mdbInput} from 'mdbvue'
 import JobItem from '../../components/JobBoard/JobItem.vue'
 
 export default {
   components: {
-    JobItem,
-    mdbInput
+    JobItem
   },
   props: [
     "editable"
@@ -80,6 +90,9 @@ export default {
   justify-content: flex-end;
 }
 
+.jobAdd .jobDetails {
+  height: 250px;
+}
 .jobAdd .jobBanner {
   background-image: url('../../assets/image/jobboard/job_add_banner.png');
   width: calc(100% + 30px);

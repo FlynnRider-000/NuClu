@@ -36,7 +36,18 @@
   
 export default {
   name: 'friend-item',
-  props: ["userInfo","type","onFriendItemClick"],
+  props: {
+    userInfo: {
+      type: Object,
+    },
+    type: {
+      type: Number,
+    },
+    onFriendItemClick: {
+      type: Function,
+      default: function() {}
+    }
+  },
   data() {
     return {
       btnClickedStatus: false

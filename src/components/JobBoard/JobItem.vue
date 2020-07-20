@@ -27,8 +27,6 @@
 </template>
 <script>
 
-import { mdbIcon } from 'mdbvue';
-
 export default {
     props: {
         jobId: {
@@ -60,9 +58,6 @@ export default {
         onEJob() {
             this.editJobHandler(this.jobId);
         }
-    },
-    components: {
-        mdbIcon
     }
 }  
 </script>

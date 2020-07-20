@@ -16,27 +16,21 @@
     <div class="JobItemList">
       <JobItem v-for="index in 10" :jobInfo="jobInfo"  :itemType="1" :jobId="index" :key="index" :jobViewHandler="onJobView" :editJobHandler="onEditJob" :deleteJobHandler="onDeleteJob"/>
     </div>
-    <mdb-modal direction="down" :show="confirm" @close="confirm = false" size="sm" class="text-center" danger centered>
-        <mdb-modal-header center :close="false">
-            <p class="heading">Are you sure?</p>
-        </mdb-modal-header>
-        <mdb-modal-body>
-            <mdb-icon icon="times" size="4x" class="animated rotateIn"/>
-        </mdb-modal-body>
-        <mdb-modal-footer center>
-            <md-button class="btn-fill btn-round btn-danger" style="padding: 0px 25px; margin:3px 5px;" @click="confirm = false">
-                Yes
-            </md-button>
-            <md-button class="btn-outline btn-round btn-danger" style="padding: 0px 25px; margin:3px 5px;" @click="confirm = false">
-                No
-            </md-button>
-        </mdb-modal-footer>
-    </mdb-modal>
+    <md-dialog-confirm
+      :md-active.sync="confirmDeleteJob"
+      md-title="Are you sure?"
+      md-content="<span>Do you want to delete this job?</span>"
+      md-confirm-text="Yes"
+      md-cancel-text="No"
+      @md-cancel="confirmDeleteJob = false"
+      @md-confirm="confirmDeleteJob = false"
+      class="md-custom-theme-light"
+    />
   </div>
 </template>
 <script>
 
-import { mdbRow, mdbColumn, mdbBtn, mdbIcon, mdbModal, mdbModalHeader, mdbModalBody, mdbModalFooter } from 'mdbvue';
+
 import JobItem from '../../components/JobBoard/JobItem.vue'
 import JobBoardToolbar from '../../components/JobBoard/JobBoardToolBar'
 
@@ -44,14 +38,6 @@ export default {
   components: {
     JobItem,
     JobBoardToolbar,
-    mdbRow,
-    mdbColumn,
-    mdbBtn,
-    mdbIcon,
-    mdbModal,
-    mdbModalHeader,
-    mdbModalBody,
-    mdbModalFooter
   },
   methods: {
     onJobView(id) {
@@ -61,7 +47,7 @@ export default {
       this.$router.push({name: 'JobBoard_Add',params:{editable:1}});
     },
     onDeleteJob(id) {
-      this.confirm = true;
+      this.confirmDeleteJob = true;
     }
   },
   data() {
@@ -73,7 +59,7 @@ export default {
         budget: 1000,
         description: 'As a full stack developer, you will be responsible for both back-end and front-end development including creating WordPress themes and plugins.'
       },
-      confirm: false,
+      confirmDeleteJob: false,
     }
   }
 }

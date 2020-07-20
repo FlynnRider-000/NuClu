@@ -57,7 +57,6 @@
   </div>
 </template>
 <script>
-import { mdbCard, mdbCardBody, mdbCardTitle, mdbBtn, mdbIcon } from 'mdbvue';
 import NewsFeedComment from '../../components/FeedItem/Comments.vue';
 import NewsFeedFooter from '../../components/FeedItem/NewFeedFooter.vue';
 import FeedItem from '../../components/FeedItem/FeedItem.vue';
@@ -67,11 +66,6 @@ export default {
     NewsFeedComment,
     NewsFeedFooter,
     FeedItem,
-    mdbCard,
-    mdbCardBody,
-    mdbCardTitle,
-    mdbBtn,
-    mdbIcon
   },
   methods: {
     goBack(){

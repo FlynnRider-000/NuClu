@@ -19,6 +19,7 @@ import Timeline from 'src/pages/UserProfile/Timeline.vue'
 import Friends from 'src/pages/UserProfile/Friends.vue'
 import Products from 'src/pages/UserProfile/Products.vue'
 import ProductDetail from 'src/pages/UserProfile/ProductDetail.vue'
+import ActivityLog from 'src/pages/UserProfile/ActivityLog.vue'
 
 import NewsFeed from 'src/pages/NewsFeed/NewsFeed.vue'
 import NewsFeedView from 'src/pages/NewsFeed/NewsFeedView.vue'
@@ -185,6 +186,11 @@ const routes = [
         path: 'viewProfile/ProductDetail',
         name: 'product-detail-view',
         component: ProductDetail
+      },
+      {
+        path: 'viewProfile/activitylog',
+        name: 'Profile_ActivityLog',
+        component: ActivityLog
       },
       {
         path: 'help/about',

@@ -4,8 +4,10 @@
       
       <div class="container">
         <md-button @click="onPostNewsFeed" class="btn-info btn-fill">
-          <mdb-icon icon="magic" class="mr-1"/>
-          New Post
+          <div style="display:flex; flex-direction:row; align-items:center;">
+            <md-icon style="color:white;">post_add</md-icon>
+            New Post
+          </div>
         </md-button>
         <div class="gallery" id="gallery_newsfeed">
           <div class="gallery-item">
@@ -89,16 +91,20 @@
         </div>
       </div>
       <div>
-          <md-dialog :md-active.sync="newPostDlg">
+          <md-dialog :md-active.sync="newPostDlg" class="md-custom-theme-light dlg-height-420">
             <md-dialog-title>News Feed Post</md-dialog-title>
             <md-dialog-content>
-              <wysiwyg v-model="newsFeedContent" />
+              <quill-editor
+                ref="myQuillEditor"
+                v-model="newsFeedContent"
+                style="height: 250px"
+              />
             </md-dialog-content>
             <md-dialog-actions>
               <md-button @click="newPostDlg = false" class="btn-info btn-fill">
                 Cancel
               </md-button>
-              <md-button class="btn-fill btn-primary">
+              <md-button @click="onNewsFeedPosted" class="btn-fill btn-primary">
                 Post
               </md-button>
             </md-dialog-actions>
@@ -110,20 +116,11 @@
 <script>
 import ProfileHeader from '../../components/ProfileHeader/ProfileHeader.vue'
 import FeedItem from '../../components/FeedItem/FeedItem.vue'
-import { mdbBtn, mdbModal, mdbModalHeader, mdbModalTitle, mdbModalBody, mdbModalFooter, mdbInput, mdbIcon } from 'mdbvue';
 
 export default {
   components: {
     ProfileHeader,
     FeedItem,
-    mdbModal,
-    mdbModalHeader,
-    mdbModalTitle,
-    mdbModalBody,
-    mdbModalFooter,
-    mdbBtn,
-    mdbInput,
-    mdbIcon,
   },
   data() {
     return {
@@ -134,6 +131,9 @@ export default {
   methods: {
     onPostNewsFeed: function() {
       this.newPostDlg = true;
+    },
+    onNewsFeedPosted: function() {
+      this.newPostDlg = false;
     }
   },
   mounted() {
@@ -198,6 +198,9 @@ export default {
 .newsfeed .gallery .content {
   padding: 4px;
   word-wrap: break-word;
+}
+.md-custom-theme-light > div {
+  background-color: white !important;
 }
 @media (max-width: 600px) {
   .newsfeed .gallery {

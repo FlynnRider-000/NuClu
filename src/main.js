@@ -1,6 +1,3 @@
-import '@fortawesome/fontawesome-free/css/all.min.css'
-import 'bootstrap-css-only/css/bootstrap.min.css'
-import 'mdbvue/lib/css/mdb.min.css'
 /*!
 
  =========================================================
@@ -36,11 +33,15 @@ import './registerServiceWorker'
 //Vue Scroll to
 import VueScrollTo from 'vue-scrollto'
 //Vue WYSIWYG
-import wysiwyg from "vue-wysiwyg";
+import VueQuillEditor from 'vue-quill-editor'
+
+import 'quill/dist/quill.core.css' // import styles
+import 'quill/dist/quill.snow.css' // for snow theme
+import 'quill/dist/quill.bubble.css' // for bubble theme
+
 //Vue Chat
 import Chat from 'vue-beautiful-chat';
 
-import "vue-wysiwyg/dist/vueWysiwyg.css";
 
 // plugin setup
 Vue.use(VueRouter)
@@ -49,9 +50,8 @@ Vue.use(ImageUploader)
 Vue.use(VueMaterial)
 Vue.use(VueCarousel);
 Vue.use(VueScrollTo);
-Vue.use(wysiwyg, {});
 Vue.use(Chat)
-
+Vue.use(VueQuillEditor)
 // configure router
 const router = new VueRouter({
   routes, // short for routes: routes

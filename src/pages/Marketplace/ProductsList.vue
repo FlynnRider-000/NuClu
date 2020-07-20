@@ -5,7 +5,7 @@
         <MarketPlaceHeader/>
       </div>
       <div class="marketplace_logo_panel"></div>
-      <div class="container">
+      <div class="container" id="container">
         <div class="row categoriesPanel">
           <div class="col-md-3" style="background-color:white">
             <div class="category_title">
@@ -31,7 +31,17 @@
               <div class="sell_productlink">
                 Start selling your products
               </div>
-              <a class="sell_productlink_click" href="#" v-scroll-to="'#marketplace_banner'">
+              <a class="sell_productlink_click" href="#" v-scroll-to="{
+                  el: '#marketplace_banner',
+                  container: '#container',
+                  duration: 500,
+                  easing: 'linear',
+                  offset: -200,
+                  force: true,
+                  cancelable: false,
+                  x: false,
+                  y: true
+              }">
                 Click Here
               </a>
             </div>
