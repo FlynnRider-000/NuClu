@@ -10,10 +10,10 @@
           <img :src="require('../../assets/image/viewprofile/search-icon.png')" width="32" height="32">
         </div>
       </div>
-      <JobBoardToolbar/>      
-    </div>
-    <div class="JobItemList">
-      <JobItem v-for="index in 10" :jobInfo="jobInfo" :key="index"/>
+      <JobBoardToolbar/>
+      <div class="JobItemList">
+        <JobItem v-for="index in 10" :jobInfo="jobInfo" :key="index"/>
+      </div>
     </div>
   </div>
 </template>

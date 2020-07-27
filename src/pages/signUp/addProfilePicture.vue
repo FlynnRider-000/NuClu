@@ -151,7 +151,6 @@ export default {
 .addProfilePicture .tip {
     color: grey;
     font-size: 21px;
-    text-align: center;
     margin-top: 20px;
     margin-bottom: 30px;
 }
@@ -285,3 +284,5 @@ export default {
     }
 }
 </style>
+
+

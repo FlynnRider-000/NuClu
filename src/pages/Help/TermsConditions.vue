@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <div class="container-fluid">
+    <div class="container">
       <md-card>
       <md-card-content style="padding: 36px">
         <div style="mso-element: para-border-div; border: none black 1.0pt; mso-border-alt: none black 0in; padding: 0in 0in 0in 0in;">

@@ -452,6 +452,7 @@ export default {
     padding-top: 80%;
     position: relative;
   }
+  
   .ProductDetail .productPanel {
     width: 100%;
     display: block;

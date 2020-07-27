@@ -25,7 +25,7 @@
             </div>
             <div style="width:30%; color:#0DB8EC"> $ 250.00 </div>
             <div style="width:20%"> 1 </div>
-          </div>
+	  </div>
 
           <div class="cartItem">
             <div style="width:50%"> 
@@ -44,8 +44,6 @@
             <div style="width:30%; color:#0DB8EC"> $ 250.00 </div>
             <div style="width:20%"> 1 </div>
           </div>
-
-
         </div>
         <div class="col-md-5">
           <div style="padding:15px; background-color:white;">

@@ -10,6 +10,7 @@
 </script>
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap');
 
   .vue-notifyjs.notifications{
     .list-move {

@@ -49,8 +49,7 @@ export default {
           name: 'default',
         },
       },
-      participants: [
-        {
+      participants: [{
           id: 'user',
           name: 'Matteo',
           imageUrl: 'https://avatars3.githubusercontent.com/u/1915989?s=230&v=4'

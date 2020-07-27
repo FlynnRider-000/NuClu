@@ -156,9 +156,6 @@ export default {
   padding: 4px;
   word-wrap: break-word;
 }
-.timeline .gallery .gallery-item {
-  cursor: pointer;
-}
 @media (max-width: 600px) {
   .timeline .gallery {
     grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
