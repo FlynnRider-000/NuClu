@@ -7,17 +7,17 @@
       </div>
     </div>
     <div class="product-header-item item-UPPER">
-      <md-button to="/nuclu/marketplace/account">
+      <md-button @click.native="$router.push('/nuclu/marketplace/account')">
           Sidney ondap's account
       </md-button>
     </div>
     <div class="product-header-item item-UPPER">
-      <md-button to="/nuclu/marketplace/customerservice">
+      <md-button @click.native="$router.push('/nuclu/marketplace/customerservice')">
           customer services
       </md-button>
     </div>
     <div class="product-header-item">
-      <md-button to="/nuclu/marketplace/cart">
+      <md-button @click.native="$router.push('/nuclu/marketplace/cart')">
           <i class="fa fa-th"/>
           Categories
       </md-button>

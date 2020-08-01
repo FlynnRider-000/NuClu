@@ -2,9 +2,9 @@
   <div class="content messages">
     <div class="container">
         <md-card>
-            <div class="row messagePanel" style="margin:0px;display:flex;">
+            <div class="row messagePanel">
                 <div class="userList" >
-                    <div style="padding: 20px 10px;font-size: 18px;">
+                    <div class="userListHeader">
                         User List
                     </div>
                     <md-divider></md-divider>
@@ -16,7 +16,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="chatWindowContainer" style="flex:1;">
+                <div class="chatWindowContainer">
                     <md-button to="/nuclu/videocall" class="toBackBtn">
                         To Video Call
                     </md-button>
@@ -65,17 +65,36 @@ export default {
     .chatWindowContainer .sc-chat-window {
         position: static !important;
         height: 500px !important;
+        padding: 0px !important;
     }
+    .messages .chatWindowContainer {
+        padding: 5px !important   
+    }
+}
+.messages .chatWindow {
+    height: calc(100% - 50px);
+}
+.messages .chatWindow > div{
+    height: 100%;
+}
+.messages .sc-chat-window {
+    height: 100%;
+    max-height: 100% !important;
+}
+.messages .messagePanel {
+    margin: 0px !important;
+    display: flex !important;
 }
 .messages .chatWindowContainer {
     padding: 30px;
+    min-height: 610px;
+    flex: 1;
 }
 .messages .chatWindowContainer .sc-message--text {
     padding: 10px 20px !important;
 }
 .messages .chatWindowContainer .sc-chat-window {
     position: static !important;
-    height: calc(100vh - 280px) !important;
     width: 100% !important;
     padding: 0px 20px;
     border: none !important;
@@ -92,7 +111,6 @@ export default {
     width: calc(100% - 100px) !important;
     word-break: break-all;
 }
-
 .messages .chatWindowContainer .sc-message-list::-webkit-scrollbar {
     width: 6px;
     background-color: rgba(0,0,0,0.1);
@@ -108,19 +126,15 @@ export default {
     transition-timing-function: ease-in-out;
 }
 .messages .chatWindowContainer .sc-message-list::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
     background-color: rgba(0,0,0,0.1);
     border-radius: 6px;
     visibility: hidden;
     transition: 2s;
     transition-timing-function: ease-in-out;
 }
-.messages .chatWindowContainer .sc-message-list:hover::-webkit-scrollbar {
-    visibility: visible;
-}
-.messages .chatWindowContainer .sc-message-list:hover::-webkit-scrollbar-thumb {
-    visibility: visible;
-}
+.messages .chatWindowContainer .sc-message-list:hover::-webkit-scrollbar,
+.messages .chatWindowContainer .sc-message-list:hover::-webkit-scrollbar-thumb,
 .messages .chatWindowContainer .sc-message-list:hover::-webkit-scrollbar-track {
     visibility: visible;
 }
@@ -134,19 +148,22 @@ export default {
     padding-left: 30px;
     padding-right: 30px;
 }
-
 .messages .container > div > .row > div{
-    min-height: calc(100vh - 171px);
     max-height: calc(100vh - 171px);
 }
-
 .messages .userList {
     padding:5px;
     border-right:1px solid lightgrey;
     min-width:270px;
     max-width: 270px;
 }
-
+.messages .sc-message .sc-message--text {
+    max-width: calc(100% - 70px) !important;
+}
+.messages .userListHeader {
+    padding: 20px 10px;
+    font-size: 18px;
+}
 .messages .chatIndicator {
   height: calc(100% - 80px);
   overflow-y: scroll;
@@ -167,7 +184,7 @@ export default {
     visibility: hidden;
 }
 .messages .chatIndicator::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
     background-color: rgba(0,0,0,0.1);
     border-radius: 6px;
     visibility: hidden;
@@ -182,38 +199,40 @@ export default {
     visibility: visible;
 }
 .messages .ciName {
-  font-size: 15px;
-  padding: 5px;
+    font-size: 15px;
+    padding: 5px;
 }
 .messages .ciTime {
-  font-size: 13px;
+    font-size: 13px;
 }
 .messages .chatItem {
-  display:flex;
-  flex-direction:row;
-  justify-content:space-between;
-  align-items:center;
-  padding:8px 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 8px;
 }
 .messages .chatItem:hover {
-  background-color: #f0f0f0;
-  cursor: pointer;
+    background-color: #f0f0f0;
+    cursor: pointer;
 }
 .messages .ciCircle {
-  background-color:lightgrey;
-  border-radius:50%;
-  position:relative;
-  width:40px;
-  height:40px;
-  min-width: 40px;;
+    background-color:lightgrey;
+    border-radius: 50%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    background-image: url("https://avatars3.githubusercontent.com/u/1915989?s=230&v=4");
+    background-size: cover;
 }
 .messages .ciCircle > div {
-  width:12px;
-  height:12px;
-  background-color:#65FD2F;
-  border-radius:50%;
-  position:absolute;
-  right:0px;
-  bottom:0px;
+    width: 8px;
+    height: 8px;
+    background-color: #65FD2F;
+    border-radius: 50%;
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
 }
 </style>

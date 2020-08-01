@@ -35,11 +35,16 @@ import MarketPlaceProductDetail from 'src/pages/Marketplace/ProductDetail.vue'
 import MarketPlaceAccount from 'src/pages/Marketplace/MarketPlaceAccount.vue'
 import CustomerService from 'src/pages/Marketplace/CustomerService.vue'
 import MarketPlaceCart from 'src/pages/Marketplace/MarketPlaceCart.vue'
+import AddProduct from 'src/pages/Marketplace/AddProduct.vue'
 
 import JobList from 'src/pages/JobBoard/JobList.vue'
 import MyJobList from 'src/pages/JobBoard/MyJobList.vue'
 import JobDetail from 'src/pages/JobBoard/JobDetail.vue'
 import JobPost from 'src/pages/JobBoard/JobPost.vue'
+
+import ArticleList from 'src/pages/Article/Article.vue'
+import ArticleView from 'src/pages/Article/ArticleView.vue'
+import AddArticle from 'src/pages/Article/AddArticle.vue'
 
 import TrendingItem from 'src/pages/Marketplace/TrendingList.vue'
 
@@ -103,6 +108,21 @@ const routes = [
         component: NewsFeedView
       },
       {
+        path: 'article/list',
+        name: 'Article_List',
+        component: ArticleList
+      },
+      {
+        path: 'article/view',
+        name: 'Article_View',
+        component: ArticleView
+      },
+      {
+        path: 'article/add',
+        name: 'Article_Add',
+        component: AddArticle
+      },
+      {
         path: 'jobboard/list',
         name: 'JobBoard_List',
         component: JobList
@@ -141,6 +161,11 @@ const routes = [
         path: 'marketplace/productlist',
         name: 'MarketPlace_ProductList',
         component: MarketplaceListing,
+      },
+      {
+        path: 'marketplace/addProduct',
+        name: 'MarketPlace_ProductAdd',
+        component: AddProduct,
       },
       {
         path: 'marketplace/cart',

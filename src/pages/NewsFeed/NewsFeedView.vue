@@ -87,7 +87,6 @@ export default {
   width: 65px;
   height: 65px;
   border-radius: 50%;
-  background-size: cover;
   background-position: center;
   margin-left: 10px;
   min-width: 65px;

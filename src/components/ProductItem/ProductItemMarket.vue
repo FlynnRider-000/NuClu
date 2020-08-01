@@ -39,11 +39,15 @@ export default {
 </script>
 <style>
 .productItemMarket {
-  width:175px;
-  height:250px;
-  margin:10px;
+  width: 175px;
+  height: 250px;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
 }
 .productItemMarket .productImg {
+  border-radius: 8px 8px 0px 0px;
   background-size: cover;
   background-position: center;
   width: 175px;
@@ -61,6 +65,7 @@ export default {
   padding: 10px;
   height: 75px;
   max-height: 75px;
+  border-radius: 0px 0px 8px 8px;
 }
 .productItemMarket .product-name {
   font-size: 19px;

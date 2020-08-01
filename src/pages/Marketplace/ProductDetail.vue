@@ -154,7 +154,7 @@
 </template>
 <script>
 import ProfileHeader from '../../components/ProfileHeader/ProfileHeader.vue'
-import ProductItem from '../../components/ProductItem/ProductItem.vue'
+import ProductItem from '../../components/ProductItem/ProductItemMarket.vue'
 import MarketPlaceHeader from './MarketPlaceHeader.vue'
 import { Carousel, Slide } from 'vue-carousel';
 

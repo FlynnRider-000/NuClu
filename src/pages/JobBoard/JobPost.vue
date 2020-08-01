@@ -31,10 +31,10 @@
         </div>
       </div>
       <div class="jobPostAction">
-        <md-button class="btn-fill btn-info btn-round" style="padding: 0px 25px; margin:3px 5px;" v-if="this.$route.params.editable !== 1">
+        <md-button class="btn-fill btn-info btn-round btn-job" v-if="this.$route.params.editable !== 1">
           Save Draft
         </md-button>
-        <md-button class="btn-fill btn-round btn-success" style="padding: 0px 25px; margin:3px 5px;" @click="onJobPosted()">
+        <md-button class="btn-fill btn-round btn-success btn-job" @click="onJobPosted()">
           {{this.$route.params.editable === 1 ? "Update Job": "Post Job"}}
         </md-button>
       </div>
@@ -78,20 +78,21 @@ export default {
 .jobAdd {
   background-color: #d5d5d5;
 }
-
 .jobAdd .container {
   background-color: white;
   padding: 20px;
 }
-
 .jobAdd .jobPostAction {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
-
 .jobAdd .jobDetails {
   height: 250px;
+}
+.jobAdd .btn-job .md-button-content{
+  padding: 0px 25px;
+  margin: 3px 5px;
 }
 .jobAdd .jobBanner {
   background-image: url('../../assets/image/jobboard/job_add_banner.png');
@@ -105,7 +106,6 @@ export default {
   word-wrap: break-word;
   line-height: 70px;
   text-align: center;
-  
   display: flex;
   justify-content: center;
   align-items: center;

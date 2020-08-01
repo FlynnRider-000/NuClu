@@ -4,7 +4,18 @@
       <div class="productImg" :style="{backgroundImage:'url(' + productInfo.productImgUrl + ')'}" @click="onProductView">
       </div>
       <div class="productInfo">
-        <div class="product-name">{{productInfo.name}}</div>
+        <div style="display:flex; justify-content:space-between; flex-direction:row">
+          <div class="product-name">{{productInfo.name}}</div>
+          <md-menu md-direction="top-start" md-align-trigger md-size="small" :mdCloseOnClick="true">
+            <md-button md-menu-trigger class="md-icon-button md-dense">
+              <md-icon>more_horiz</md-icon>
+            </md-button>
+            <md-menu-content>
+              <md-button class="md-dense md-primary" @click="modifyProduct">Modify</md-button>
+              <md-button class="md-dense" @click="deleteProduct">Delete</md-button>
+            </md-menu-content>
+          </md-menu>
+        </div>
         <div class="product-price">$ {{productInfo.price}}</div>
         <div class="product-rating">
           <div class="ratingStars">
@@ -15,6 +26,7 @@
             {{rateString}}
           </div>
         </div>
+        
       </div>
     </div>
   </div>
@@ -22,8 +34,12 @@
 <script>
   
 export default {
-  name: 'product-item',
-  props: ["productInfo"],
+  name: 'product-item-market',
+  props: {
+    productInfo: Object,
+    modifyProduct: Function,
+    deleteProduct: Function
+  },
   computed: {
     rateString () {
       return this.productInfo.star + ' star' + (this.productInfo.star > 1 ? 's' : '');
@@ -31,7 +47,7 @@ export default {
   },
   methods: {
     onProductView () {
-      this.$router.push({name:'product-detail-view'})
+      this.$router.push({name:'MarketPlace_ProductDetail'})
     }
   }
 }
@@ -39,11 +55,20 @@ export default {
 </script>
 <style>
 .productItem {
-  width:175px;
-  height:250px;
-  margin:10px;
+  width: 175px;
+  height: 250px;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+.productItem .md-menu .md-button{
+  width: 20px !important;
+  height: 20px !important;
+  min-width: 20px !important;
 }
 .productItem .productImg {
+  border-radius: 8px 8px 0px 0px;
   background-size: cover;
   background-position: center;
   width: 175px;
@@ -61,6 +86,7 @@ export default {
   padding: 10px;
   height: 75px;
   max-height: 75px;
+  border-radius: 0px 0px 8px 8px;
 }
 .productItem .product-name {
   font-size: 19px;

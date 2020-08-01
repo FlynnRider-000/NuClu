@@ -217,7 +217,7 @@ export default {
 }
 .addFriend .friendContainer::-webkit-scrollbar {
     width: 0px;
-    background: transparent; /* make scrollbar transparent */
+    background: transparent;
 }
 @media (min-width: 768px) and (max-width: 1440px){
     .addFriend .newclue {

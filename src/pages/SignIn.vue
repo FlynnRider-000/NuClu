@@ -30,8 +30,7 @@
                                         class="signin_input"
                                         v-model="s_userName"
                                         v-on:focus="onInputFocused"
-                                        :class="{validError : signinInputValidation[0]}"
-                                        style="margin-top:20px;border:1px solid lightgrey">
+                                        :class="{validError : signinInputValidation[0]}">
                                     </base-input>
                                 </div>
                                 <div>
@@ -41,8 +40,7 @@
                                         class="signin_input"
                                         v-model="s_passWord"
                                         v-on:focus="onInputFocused"
-                                        :class="{validError : signinInputValidation[1]}"
-                                        style="margin-top:20px;border:1px solid lightgrey">
+                                        :class="{validError : signinInputValidation[1]}">
                                     </base-input>
                                 </div>
                                 <div>
@@ -66,8 +64,7 @@
                                     type="text"
                                     class="signin_input"
                                     v-model="forgot_email"
-                                    v-on:focus="onInputFocused"
-                                    style="margin-top:20px;border:1px solid lightgrey">
+                                    v-on:focus="onInputFocused">
                                 </base-input>
                             </div>
                             <div class="buttons">
@@ -236,6 +233,7 @@ export default {
                         tmp1[4] = 0;break;
                 }
             }
+            
             if(parent.attr("class").includes("signin_input")) {
                 switch(tmpstr) {
                     case 'Username':
@@ -330,6 +328,8 @@ export default {
     width: 100%;
     transition: 0.5s;
     transition-timing-function: ease;
+    margin-top: 20px;
+    border: 1px solid lightgrey;
 }
 .signinview .logo > img{
     width: 30%;

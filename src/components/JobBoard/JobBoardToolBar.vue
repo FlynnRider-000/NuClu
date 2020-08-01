@@ -1,12 +1,12 @@
 <template>
     <div class="jobPostToolBar">
-        <md-button class="btn-fill btn-info btn-round" style="padding: 0px 25px; margin:3px 5px;" @click="toJobPost()">
+        <md-button class="btn-fill btn-info btn-round btn-job" @click="toJobPost()">
             Job Post
         </md-button>
-        <md-button class="btn-fill btn-warning btn-round" style="padding: 0px 25px; margin:3px 5px;" @click="viewAllJobs()">
+        <md-button class="btn-fill btn-warning btn-round btn-job" @click="viewAllJobs()">
             All Jobs
         </md-button>
-        <md-button class="btn-fill btn-round btn-success" style="padding: 0px 25px; margin:3px 5px;" @click="viewMyJobs()">
+        <md-button class="btn-fill btn-round btn-success btn-job" @click="viewMyJobs()">
             My Jobs
         </md-button>
     </div>
@@ -34,6 +34,10 @@ export default {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+}
+.jobPostToolBar .btn-job .md-button-content{
+  padding: 0px 25px;
+  margin: 3px 5px;
 }
 </style>
 

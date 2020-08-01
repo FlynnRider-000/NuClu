@@ -1,7 +1,6 @@
 <template>
   <div class="content newsfeed">
     <div class="container-fluid">
-      
       <div class="container">
         <md-button @click="onPostNewsFeed" class="btn-info btn-fill">
           <div style="display:flex; flex-direction:row; align-items:center;">
@@ -91,25 +90,25 @@
         </div>
       </div>
       <div>
-          <md-dialog :md-active.sync="newPostDlg" class="md-custom-theme-light dlg-height-420">
-            <md-dialog-title>News Feed Post</md-dialog-title>
-            <md-dialog-content>
-              <quill-editor
-                ref="myQuillEditor"
-                v-model="newsFeedContent"
-                style="height: 250px"
-              />
-            </md-dialog-content>
-            <md-dialog-actions>
-              <md-button @click="newPostDlg = false" class="btn-info btn-fill">
-                Cancel
-              </md-button>
-              <md-button @click="onNewsFeedPosted" class="btn-fill btn-primary">
-                Post
-              </md-button>
-            </md-dialog-actions>
-          </md-dialog>
-        </div>
+        <md-dialog :md-active.sync="newPostDlg" class="md-custom-theme-light dlg-height-420">
+          <md-dialog-title>News Feed Post</md-dialog-title>
+          <md-dialog-content>
+            <quill-editor
+              ref="myQuillEditor"
+              v-model="newsFeedContent"
+              style="height: 250px"
+            />
+          </md-dialog-content>
+          <md-dialog-actions>
+            <md-button @click="() => newPostDlg = false" class="btn-fill btn-info">
+              Cancel
+            </md-button>
+            <md-button @click="onNewsFeedPosted" class="btn-fill btn-primary">
+              Post
+            </md-button>
+          </md-dialog-actions>
+        </md-dialog>
+      </div>
     </div>
   </div>
 </template>
@@ -138,45 +137,46 @@ export default {
   },
   mounted() {
     var gallery = document.querySelector('#gallery_newsfeed');
-      var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
-      var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
-      gallery.querySelectorAll('div.gallery-item > div.content').forEach(function (item1) {
-        var item = item1.querySelector("div.gallery-item div.content div.mainContent img");
-        if(item !== null){
-            if (item.complete) {
-                var altura = getVal(gallery, 'grid-auto-rows');
-                var gap = getVal(gallery, 'grid-row-gap');
-                var gitem = item.parentElement.parentElement.parentElement.parentElement;
-                gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
-            }
-            else {
-                item.addEventListener('load', function () {
-                    var altura = getVal(gallery, 'grid-auto-rows');
-                    var gap = getVal(gallery, 'grid-row-gap');
-                    var gitem = item.parentElement.parentElement.parentElement.parentElement;
-                    gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
-                });
-            }
-        }
-        else{
-            var altura = getVal(gallery, 'grid-auto-rows');
-            var gap = getVal(gallery, 'grid-row-gap');
-            var gitem = item1.parentElement;
-            gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
-        }
-      });
+    var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
+    var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
+    gallery.querySelectorAll('div.gallery-item > div.content').forEach(function (item1) {
+      var item = item1.querySelector("div.gallery-item div.content div.mainContent img");
+      if(item !== null){
+          if (item.complete) {
+              var altura = getVal(gallery, 'grid-auto-rows');
+              var gap = getVal(gallery, 'grid-row-gap');
+              var gitem = item.parentElement.parentElement.parentElement.parentElement;
+              gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
+          }
+          else {
+              item.addEventListener('load', function () {
+                  var altura = getVal(gallery, 'grid-auto-rows');
+                  var gap = getVal(gallery, 'grid-row-gap');
+                  var gitem = item.parentElement.parentElement.parentElement.parentElement;
+                  gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
+              });
+          }
+      }
+      else{
+          var altura = getVal(gallery, 'grid-auto-rows');
+          var gap = getVal(gallery, 'grid-row-gap');
+          var gitem = item1.parentElement;
+          gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
+      }
+    });
   }
 }
 </script>
 <style>
-
-.editr--toolbar{
+.md-button::before {
+  will-change: auto !important;
+}
+.editr--toolbar {
   width: 100%;
   height: fit-content;
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
-
 }
 .newsfeed,
 .newsfeed .container-fluid {
@@ -184,13 +184,12 @@ export default {
   padding-top: 10px !important;
   background-color: #ededed;
 }
-
 .newsfeed .gallery {
   display: grid;
-  grid-column-gap: 8px;
-  grid-row-gap: 8px;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  grid-auto-rows: 8px;
+  grid-auto-rows: 5px;
 }
 .newsfeed .gallery img {
   max-width: 100%;

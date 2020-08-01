@@ -40,12 +40,15 @@ export default {
         },
         jobViewHandler: {
             type: Function,
+            default: function(){}
         },
         editJobHandler: {
             type: Function,
+            default: function(){}
         },
         deleteJobHandler: {
-            type: Function
+            type: Function,
+            default: function(){}
         }
     },
     methods: {

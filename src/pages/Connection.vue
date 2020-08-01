@@ -18,25 +18,22 @@
         </div>
       </center>
       <div class="btn-list">
-        <div class="blue-btn" :class="{'active-btn': connectionType === 'Friends'}" @click="onConnectionTypeChange('Friends')">
+        <div class="blue-btn" :class="{'active-btn': connectionType==='Friends'}" @click="onConnectionTypeChange('Friends')">
           Friends
         </div>
-        <div class="blue-btn" :class="{'active-btn': connectionType === 'Customers'}" @click="onConnectionTypeChange('Customers')">
+        <div class="blue-btn" :class="{'active-btn': connectionType==='Customers'}" @click="onConnectionTypeChange('Customers')">
           Customers
         </div>
-        <div class="blue-btn" :class="{'active-btn': connectionType === 'Suppliers'}" @click="onConnectionTypeChange('Suppliers')">
+        <div class="blue-btn" :class="{'active-btn': connectionType==='Suppliers'}" @click="onConnectionTypeChange('Suppliers')">
           Suppliers
         </div>
-        <div class="blue-btn" :class="{'active-btn': connectionType === 'Requests'}" @click="onConnectionTypeChange('Requests')">
+        <div class="blue-btn" :class="{'active-btn': connectionType==='Requests'}" @click="onConnectionTypeChange('Requests')">
           Request
         </div>
       </div>
-      <div>
-
-      </div>
       <div class="friendPanel">
           <div class="searchInput">
-            <input type="text" style="font-size: 15px;padding:6px;border:none;width:200px;" :placeholder="'Search ' + connectionType">
+            <input type="text" :placeholder="'Search ' + connectionType">
             <div>
               <img :src="require('../assets/image/viewprofile/search-icon.png')" width="32" height="32">
             </div>
@@ -132,7 +129,7 @@
 </script>
 
 <style lang="scss">
-.connection .logo > img{
+.connection .logo > img {
     max-width: 250px;
     padding: 5px;
     margin: 20px;
@@ -140,6 +137,12 @@
 .connection .searchInput {
   display: flex;
   justify-content: center;
+}
+.connection .searchInput input {
+  font-size: 15px;
+  padding: 6px;
+  border: none;
+  width:200px;
 }
 .connection .searchInput div {
   cursor: pointer;
@@ -183,11 +186,9 @@
   justify-content: center;
   align-items: center;
   font-size: 18px;
-  font-family: 'roboto' !important;
   margin: 4px;
   cursor: pointer;
 }
-
 .connection .friendContainer{
     overflow-y: auto;
     display: flex;

@@ -38,6 +38,10 @@
         <i class="fa fa-user-circle-o"></i>
         <p>User Profile</p>
       </sidebar-link>
+      <sidebar-link to="/nuclu/article/list">
+        <i class="fa fa-newspaper-o" style="font-size:27px;"></i>
+        <p>Article</p>
+      </sidebar-link>
       <sidebar-link class="inactive-menu" to="/none">
         <i class="fa fa-question-circle"></i>
         <p>Help</p>

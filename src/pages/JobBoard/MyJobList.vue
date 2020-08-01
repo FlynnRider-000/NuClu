@@ -12,9 +12,9 @@
         </div>
       </div>
       <JobBoardToolbar/>  
-    </div>
-    <div class="JobItemList">
-      <JobItem v-for="index in 10" :jobInfo="jobInfo"  :itemType="1" :jobId="index" :key="index" :jobViewHandler="onJobView" :editJobHandler="onEditJob" :deleteJobHandler="onDeleteJob"/>
+      <div class="JobItemList">
+        <JobItem v-for="index in 10" :jobInfo="jobInfo"  :itemType="1" :jobId="index" :key="index" :jobViewHandler="onJobView" :editJobHandler="onEditJob" :deleteJobHandler="onDeleteJob"/>
+      </div>
     </div>
     <md-dialog-confirm
       :md-active.sync="confirmDeleteJob"

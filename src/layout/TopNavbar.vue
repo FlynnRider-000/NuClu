@@ -13,10 +13,10 @@
         <span class="navbar-toggler-bar burger-lines"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-start">
-        <div style="width: 30%;min-width: 250px;display:flex">
+        <div class="searchPanel">
           <img v-if="isMarketPlacePage === true" :src="require('../assets/image/topbar/NEWCLUE_Marketplace.png')"/>
-          <input v-if="isMarketPlacePage === false" type="text"  style="border:none; width:calc(100% - 30px); padding: 5px;">
-          <div v-if="isMarketPlacePage === false" class="search-btn" style="cursor: pointer">
+          <input class="searchInput" v-if="isMarketPlacePage === false" type="text">
+          <div v-if="isMarketPlacePage === false" class="searchBtn" style="cursor: pointer">
             <img :src="require('../assets/image/viewprofile/search-icon.png')" width=30 height=30>
           </div>
         </div>
@@ -109,22 +109,36 @@
 <style>
 @media (min-width: 992px){
   .navbar .logo-img > img {
-    height: 40px;
     display: none !important;
   }
 }
 .navbar .logo-img > img {
+  display: block;
   height: 40px;
-  display: inline;
 }
 .navbar,
 .navbar .container-fluid  {
   padding-left: 0px !important;
 }
-.navbar .container-fluid  {
-  padding-left: 0px !important;
-}
 .navbar .dropdown-item{
   cursor: pointer;
+}
+.navbar .searchPanel {
+  width: 25%;
+  min-width: 200px;
+  min-width: 250px;
+  display: flex;
+}
+.navbar .searchInput {
+  border: none;
+  width: calc(100% - 30px);
+  padding: 5px;
+  border-radius: 5px 0px 0px 5px;
+}
+.navbar .searchBtn {
+  cursor: pointer;
+}
+.navbar .searchBtn img {
+  border-radius: 0px 5px 5px 0px;
 }
 </style>

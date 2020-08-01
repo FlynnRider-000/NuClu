@@ -17,41 +17,85 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
 
-// LightBootstrap plugin
+/*
+**
+  Vue Scroll to
+**
+*/
+var VueScrollTo = require('vue-scrollto')
+Vue.use(VueScrollTo);
+
+/*
+**
+  LightBootstrap plugin
+**
+*/
 import LightBootstrap from './light-bootstrap-main'
-// Vue Image Upload and Resize plugin
+Vue.use(LightBootstrap)
+
+/*
+**
+  Vue Image Upload and Resize plugin
+**
+*/
 import ImageUploader from 'vue-image-upload-resize'
-// Vue Mateiral
+Vue.use(ImageUploader)
+
+/*
+**
+  Vue Mateiral 
+**
+*/
 import VueMaterial from 'vue-material'
 import 'vue-material/dist/vue-material.min.css'
-// Vue Carousel
-import VueCarousel from 'vue-carousel';
-// router setup
+Vue.use(VueMaterial)
+
+/*
+**
+  Vue Carousel
+**
+*/
+import VueCarousel from 'vue-carousel'
+Vue.use(VueCarousel)
+
+/*
+**
+  Vue Multiple Image Upload
+**
+*/
+import VueLazyload from 'vue-lazyload'
+Vue.use(VueLazyload)
+
+/*
+**
+  Vue WYSIWYG
+**
+*/
+import VueQuillEditor from 'vue-quill-editor'
+import 'quill/dist/quill.core.css' /* import styles */
+import 'quill/dist/quill.snow.css' /* for snow theme */
+import 'quill/dist/quill.bubble.css' /* for bubble theme */
+Vue.use(VueQuillEditor)
+
+/*
+**
+  Vue Chat
+**
+*/
+import Chat from 'vue-beautiful-chat'
+Vue.use(Chat)
+
+/*
+**
+  router setup
+**
+*/
 import routes from './routes/routes'
 import store from './store'
 import './registerServiceWorker'
-//Vue Scroll to
-import VueScrollTo from 'vue-scrollto'
-//Vue WYSIWYG
-import VueQuillEditor from 'vue-quill-editor'
-
-import 'quill/dist/quill.core.css' // import styles
-import 'quill/dist/quill.snow.css' // for snow theme
-import 'quill/dist/quill.bubble.css' // for bubble theme
-
-//Vue Chat
-import Chat from 'vue-beautiful-chat';
-
-
-// plugin setup
+ 
 Vue.use(VueRouter)
-Vue.use(LightBootstrap)
-Vue.use(ImageUploader)
-Vue.use(VueMaterial)
-Vue.use(VueCarousel);
-Vue.use(VueScrollTo);
-Vue.use(Chat)
-Vue.use(VueQuillEditor)
+
 // configure router
 const router = new VueRouter({
   routes, // short for routes: routes

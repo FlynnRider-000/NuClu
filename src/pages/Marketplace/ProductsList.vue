@@ -7,7 +7,7 @@
       <div class="marketplace_logo_panel"></div>
       <div class="container" id="container">
         <div class="row categoriesPanel">
-          <div class="col-md-3" style="background-color:white">
+          <div class="col-md-3">
             <div class="category_title">
               CATEGORIES
             </div>
@@ -31,17 +31,14 @@
               <div class="sell_productlink">
                 Start selling your products
               </div>
-              <a class="sell_productlink_click" href="#" v-scroll-to="{
-                  el: '#marketplace_banner',
-                  container: '#container',
-                  duration: 500,
+              <a href="#" v-scroll-to="{ 
+                  el: '#marketplacebanner', 
+                  duration: 1000, 
+                  container: '.mp_ProductList', 
                   easing: 'linear',
-                  offset: -200,
-                  force: true,
-                  cancelable: false,
-                  x: false,
-                  y: true
-              }">
+                  offset: 200000
+                  }" 
+                class="sell_productlink_click">
                 Click Here
               </a>
             </div>
@@ -54,7 +51,7 @@
                 <div class="sell_nsplink">
                   Catch up with the newly sold products, probably with hot sales and discounts
                 </div>
-                <a class="sell_nsplink_click"  href="#" v-scroll-to="'#marketplace_banner'">
+                <a class="sell_nsplink_click"  href="#" v-scroll-to="'marketplace_banner'">
                   Click Here
                 </a>
               </div>
@@ -125,7 +122,7 @@
             </div>
           </div>
         </div>
-        <div class="row" id="marketplace_banner" style="height:16%; min-height:120px; background-size:cover; background-position:center;" :style="{backgroundImage:'url(' + require('../../assets/image/marketplace/marketplace_banner.png') + ')'}">
+        <div class="row" id="marketplacebanner" :style="{backgroundImage:'url(' + require('../../assets/image/marketplace/marketplace_banner.png') + ')'}">
         </div>
         <div class="productContent">
           <ProductItem v-for="(item, index) in products" :key="index" :productInfo="item"/>
@@ -173,7 +170,6 @@ export default {
   }
 }
 </script>
-
 <style>
 .mp_ProductList,
 .mp_ProductList .container-fluid {
@@ -192,7 +188,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
 }
 .mp_ProductList .nspList {
   display:flex;
@@ -211,10 +206,15 @@ export default {
   justify-content: flex-end;
   align-items: flex-end;
   text-align: right;
-  font-family: 'Barlow' !important;
   -webkit-text-stroke: 1px white;
   text-shadow: -3px -3px 1px white;
   padding: 5px;
+}
+.mp_ProductList #marketplacebanner {
+  height:150px;
+  min-height:120px;
+  background-size:cover;
+  background-position:center;
 }
 .mp_ProductList .tpHeading {
   color: rgba(0,0,0,0);
@@ -224,7 +224,6 @@ export default {
   justify-content: flex-start;
   align-items: flex-end;
   text-align: left;
-  font-family: 'Barlow' !important;
   -webkit-text-stroke: 1px white;
   text-shadow: -3px -3px 1px white;
   padding: 5px;
@@ -239,7 +238,6 @@ export default {
   padding: 15px 20px;
   color: white !important;
   font-size: 27px;
-  font-family: 'Barlow' !important;
   border: 2px solid lightgrey;
   margin: 10px;
   cursor: pointer;
@@ -251,9 +249,8 @@ export default {
 }
 .mp_ProductList .sell_nsplink {
   font-size: 22px;
-  line-height: 23px;
+  line-height: 45px;
   color: white !important;
-  font-family: 'Barlow' !important;
   margin: 10px;
 }
 .mp_ProductList .sellProductsPanel {
@@ -284,14 +281,13 @@ export default {
 .mp_ProductList .sell_productlink {
   color: white;
   font-size: 35px;
-  font-family: 'Barlow';
   margin: 10px;
+  line-height: 1.3em;
 }
 .mp_ProductList .sell_productlink_click {
   padding: 15px 20px;
   color: white !important;
   font-size: 32px;
-  font-family: 'Barlow' !important;
   border: 2px solid lightgrey;
   margin: 10px;
   cursor: pointer;
@@ -344,7 +340,6 @@ export default {
     justify-content: flex-end;
     align-items: flex-end;
     text-align: right;
-    font-family: 'Barlow' !important;
     -webkit-text-stroke: 1px white;
     text-shadow: -3px -3px 1px white;
     padding: 5px;
@@ -359,7 +354,6 @@ export default {
     justify-content: flex-start;
     align-items: flex-end;
     text-align: left;
-    font-family: 'Barlow' !important;
     -webkit-text-stroke: 1px white;
     text-shadow: -3px -3px 1px white;
     padding: 5px;

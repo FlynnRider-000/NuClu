@@ -1,8 +1,8 @@
 <template>
-  <div class="friendItem" style="min-width:280px; height:140px; background-color:white; margin:20px;">
-    <div style="width:100%; height:100%; display:flex;flex-direction:row; position:relative;">
-      <div class="backPanel" :style="{backgroundImage:'url(' + userInfo.backUrl + ')'}"></div>
-      <div style="width:68%; height:100%; background-color:white; display:flex; flex-direction:column; justify-content: center">
+  <div class="friendItem">
+    <div class="friendItemContainer">
+      <div class="usrBackImg" :style="{backgroundImage:'url(' + userInfo.backUrl + ')'}"></div>
+      <div class="usrInfoPanel">
         <div class="namePanel">
           {{userInfo.name}}
         </div>
@@ -23,17 +23,16 @@
       <div class="btnArea" :class="{ activedBtn:btnClickedStatus}" @click="onBtnClicked" v-if="type !== 4">
         <span>{{displayBtnName}}</span>
       </div>
-      <div class="btnAreaAccept" :class="{ activedBtn:btnClickedStatus}" @click="onBtnClicked" v-if="type === 4">
+      <div class="btnAccept" :class="{ activedBtn:btnClickedStatus}" @click="onBtnClicked" v-if="type === 4">
         <span>Accept</span>
       </div>
-      <div class="btnAreaDecline" :class="{ activedBtn:btnClickedStatus}" @click="onBtnClicked" v-if="type === 4">
+      <div class="btnDecline" :class="{ activedBtn:btnClickedStatus}" @click="onBtnClicked" v-if="type === 4">
         <span>Decline</span>
       </div>
     </div>
   </div>
 </template>
 <script>
-  
 export default {
   name: 'friend-item',
   props: {
@@ -71,9 +70,38 @@ export default {
     }
   }
 }
-
 </script>
 <style>
+  .friendItem {
+    min-width: 280px;
+    height: 140px;
+    background-color :white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+  }
+  .friendItemContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .friendItem .usrBackImg {
+    width: 32%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+  }
+  .friendItem .usrInfoPanel {
+    width: 68%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+  }
   .friendItem .namePanel{
     font-size: 20px;
     padding-bottom: 15px;
@@ -117,12 +145,12 @@ export default {
     text-align: center;
   }
   .friendItem .btnArea:hover,
-  .friendItem .btnAreaAccept:hover,
-  .friendItem .btnAreaDecline:hover {
+  .friendItem .btnAccept:hover,
+  .friendItem .btnDecline:hover {
     background-color: #F0F0F0;
   }
-  .friendItem .btnAreaAccept,
-  .friendItem .btnAreaDecline {
+  .friendItem .btnAccept,
+  .friendItem .btnDecline {
     position: absolute;
     width: 115px;
     left: 20px;
@@ -137,15 +165,8 @@ export default {
     cursor: pointer;
     text-align: center;
   }
-  .friendItem .btnAreaDecline {
+  .friendItem .btnDecline {
     left: 145px !important;
-  }
-  .friendItem .backPanel{
-    width:32%;
-    height:100%;
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
   }
   .friendItem .profilePanel {
     width: 70px;
@@ -155,8 +176,8 @@ export default {
     left: 55px;
     top: 10px;
     position: absolute;
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 </style>

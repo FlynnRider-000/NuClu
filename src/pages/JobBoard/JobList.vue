@@ -12,7 +12,7 @@
       </div>
       <JobBoardToolbar/>
       <div class="JobItemList">
-        <JobItem v-for="index in 10" :jobInfo="jobInfo" :key="index"/>
+        <JobItem v-for="index in 10" :jobInfo="jobInfo"  :itemType="0" :jobId="index" :key="index" :jobViewHandler="onJobView"/>
       </div>
     </div>
   </div>
@@ -37,7 +37,12 @@ export default {
         description: 'As a full stack developer, you will be responsible for both back-end and front-end development including creating WordPress themes and plugins.'
       }
     }
-  }
+  },
+  methods: {
+    onJobView(id) {
+      this.$router.push({name: 'JobBoard_Detail'});
+    }
+  },
 }
 
 </script>
